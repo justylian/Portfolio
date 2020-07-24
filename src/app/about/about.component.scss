@@ -1,25 +1,41 @@
 #about {
-    height: 800px;
+    height: 600px;
     margin-top: 15;
     margin-top: 10%;
-    .fab {
-        font-size: 2vw;
+    .fab,
+    .far,
+    .fa {
+        font-size: 3vw;
+        color: var(--main-color-2);
+        margin-left: 80%;
+        /* float: right; */
+        margin-top: 3%;
+        text-align: center;
+        display: block;
+        transition: 1s;
+        cursor: pointer;
     }
-    .fab .fa-github {}
-    .fab .fa-behance {}
-    .fab .fa-linkedin-in {}
-    .fab .fa-envelope {
-        font-size: 2vw;
-        width: 100px;
-        color: blue;
-        height: 100px;
+    .fab:hover,
+    .far:hover,
+    .fa:hover {
+        color: var(--main-color-1);
     }
-    #mail {}
+    .fab.fa-github {}
+    .fab.fa-behance {}
+    .fab.fa-linkedin-in {}
+    .far.fa-envelope {}
+    #mail {
+        font-size: 3vw;
+        position: absolute;
+        padding-top: 8%;
+        margin-left: 10%;
+        color: var(--main-color-1);
+    }
     #about-by {
         float: right;
         margin: auto;
         position: relative;
-        margin-top: 36%;
+        margin-top: 7%;
         right: 41%;
         #about-by-guy {
             color: var(--main-color-2);
