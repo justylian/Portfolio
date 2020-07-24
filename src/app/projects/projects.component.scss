@@ -1,0 +1,88 @@
+#projects {
+    margin-top: -5%;
+    padding-top: 5%;
+    ul {
+        padding-left: 0%;
+    }
+    #projects-inner li {
+        width: 70%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: block;
+        height: 100%;
+        position: relative;
+        margin: auto;
+        /* margin-right: 0%; */
+        margin-top: 10%;
+        #project2 {}
+    }
+    .project {
+        background-size: cover;
+        display: none;
+        width: 100%;
+        img {
+            // opacity: 0;
+            width: 100%;
+        }
+        .minimize {
+            display: none;
+            position: fixed;
+            color: white;
+            filter: drop-shadow(0px 0px 13px #fff);
+            right: 2%;
+            top: 0%;
+            /* margin: auto; */
+            font-size: 5vw;
+            cursor: pointer;
+            .minimize-text {
+                font-size: 1vw;
+                position: absolute;
+                text-align: center;
+                right: -19%;
+                top: 83%;
+                opacity: 0;
+            }
+        }
+    }
+    #projects-inner-text {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        h1 {
+            display: block;
+            color: var(--main-color-1);
+            font-size: 2.5vw;
+            margin: 0;
+        }
+        h2 {
+            display: block;
+            color: var(--main-color-1);
+            font-size: 1.5vw;
+            margin: 0;
+            font-family: "RobotoLight";
+        }
+        h3 {
+            display: block;
+            color: var(--main-color-2);
+            font-size: 1.5vw;
+            cursor: pointer;
+            transition: 1s;
+        }
+        h3:hover {
+            color: var(--main-color-1);
+        }
+    }
+    #projects-inner-assets {
+        width: 50%;
+        display: inline-block;
+        background-size: cover;
+        transition: 1s;
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+    #projects-inner-assets:hover {
+        transform: scale(1.05);
+    }
+}

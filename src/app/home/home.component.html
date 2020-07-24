@@ -1,0 +1,17 @@
+<div id="home">
+    <div id="home-about">
+        <a id="home-name" (click)="scrollDown('about')">Stelios Xenakis </a>
+        <div id="home-desc">is a Product Designer.</div>
+    </div>
+    <a id="arrow-down" (click)="scrollDown('projects')" (mouseenter)="hoverScrollDown()" (mouseleave)="unhoverScrollDown()">	&darr;
+    <div class="arrow-text">Projects</div>
+
+  </a>
+
+
+    <div id="arrow-up" (click)="scrollUp()" (mouseenter)="hoverScrollUp()" (mouseleave)="unhoverScrollUp()">
+        &uarr;
+        <div class="arrow-text">Back To Top</div>
+    </div>
+
+</div>
