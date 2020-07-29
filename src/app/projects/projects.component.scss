@@ -1,8 +1,39 @@
 #projects {
     margin-top: -5%;
     padding-top: 5%;
+    .loader {
+        margin: auto;
+        position: absolute;
+        /* border: 3px solid #f3f3f30a; */
+        border-radius: 50%;
+        border-top: 2px solid #e8e096;
+        width: 1.7vw;
+        display: inline;
+        height: 1.7vw;
+        margin-left: 1%;
+        opacity: 0;
+        animation: spin 1s linear infinite;
+        z-index: 3;
+    }
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
     ul {
         padding-left: 0%;
+        z-index: 4;
     }
     #projects-inner li {
         width: 70%;
@@ -20,6 +51,9 @@
         background-size: cover;
         display: none;
         width: 100%;
+        position: relative;
+        // margin-top: -220px;
+        z-index: 4;
         img,
         video {
             // opacity: 0;
@@ -86,5 +120,11 @@
     }
     #projects-inner-assets:hover {
         transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width:481px) {
+    #projects #projects-inner li {
+        width: 90%;
     }
 }

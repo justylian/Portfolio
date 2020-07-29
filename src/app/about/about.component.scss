@@ -1,5 +1,5 @@
 #about {
-    height: 600px;
+    height: 32vw;
     margin-top: 15;
     margin-top: 10%;
     .fab,
@@ -7,13 +7,13 @@
     .fa {
         font-size: 3vw;
         color: var(--main-color-2);
-        margin-left: 80%;
-        /* float: right; */
+        margin-left: 14%;
         margin-top: 3%;
-        text-align: center;
+        text-align: left;
         display: block;
         transition: 1s;
         cursor: pointer;
+        width: 5%;
     }
     .fab:hover,
     .far:hover,
@@ -25,10 +25,10 @@
     .fab.fa-linkedin-in {}
     .far.fa-envelope {}
     #mail {
-        font-size: 3vw;
+        font-size: 2.5vw;
         position: absolute;
-        padding-top: 8%;
-        margin-left: 10%;
+        margin-top: -9%;
+        margin-left: 40%;
         color: var(--main-color-1);
     }
     #about-by {
@@ -36,7 +36,8 @@
         margin: auto;
         position: relative;
         margin-top: 7%;
-        right: 41%;
+        right: 37%;
+        font-size: 2vw;
         #about-by-guy {
             color: var(--main-color-2);
             display: inline;
@@ -46,5 +47,11 @@
         #about-by-guy:hover {
             color: black;
         }
+    }
+}
+
+@media screen and (max-width:481px) {
+    #about {
+        //padding-right: 10%;
     }
 }

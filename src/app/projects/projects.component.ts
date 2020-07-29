@@ -33,4 +33,11 @@ export class ProjectsComponent implements OnInit {
     this.projectService.showProject(x)
   }
 
+  hideLoader(x){
+    console.log("wdc")
+
+    this.projectService.hideLoader(x);
+  }
+
+
 }

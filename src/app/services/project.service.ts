@@ -20,10 +20,17 @@ export class ProjectService {
     var myVar=eval("this.project"+x+"Is");
     console.log(myVar);
      if(myVar===false) {
-      $("#project"+x).show();
+      $("#project"+x).show();$
+      $("#h3-"+x+" .loader").animate({
+        opacity:"1"
+            }, 50);
+
       let element = document.getElementById("project-li-"+x);
       element.scrollIntoView({behavior:"smooth"});
-      $("#h3-"+x).html("See Less");
+      //$("#h3-"+x).text("See Less");
+      $("#h3-"+x).contents().filter(function(){
+        return this.nodeType == 3;
+      })[0].nodeValue = "See Less"
       $("#project"+x+"-min").show();
 
       myVar=true;
@@ -31,9 +38,13 @@ export class ProjectService {
     else{
 
       $("#project"+x).hide();
+
       let element = document.getElementById("project-li-"+x);
       element.scrollIntoView({behavior:"smooth"});
-      $("#h3-"+x).html("See More");
+      //$("#h3-"+x).text("See More");
+      $("#h3-"+x).contents().filter(function(){
+        return this.nodeType == 3;
+      })[0].nodeValue = "See More"
       $("#project"+x+"-min").hide();
 
       myVar=false;
@@ -55,5 +66,11 @@ export class ProjectService {
 
     }
 
+  }
+  hideLoader(x){
+    console.log("wdc")
+    $("#h3-"+x+" .loader").animate({
+      opacity:"0"
+          }, 50);
   }
 }
