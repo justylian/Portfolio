@@ -33,12 +33,12 @@ export class HomeComponent implements OnInit {
   public scrollDown(el) {
     let element = document.getElementById(el);
 
-    console.log(el)
+    //console.log(el)
     element.scrollIntoView({behavior:"smooth"});
   }
 
   scrollUp() {
-      console.log("home")
+      //console.log("home")
       let element = document.getElementById("home");
       element.scrollIntoView({behavior:"smooth"});
     }
