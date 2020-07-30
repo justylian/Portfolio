@@ -38,6 +38,7 @@
         margin-top: 7%;
         right: 37%;
         font-size: 2vw;
+        color: var(--main-color-1);
         #about-by-guy {
             color: var(--main-color-2);
             display: inline;
@@ -45,7 +46,7 @@
             cursor: pointer;
         }
         #about-by-guy:hover {
-            color: black;
+            color: var(--main-color-1);
         }
     }
 }

@@ -9,8 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { LogosComponent } from './logos/logos.component';
 import { ScreensComponent } from './screens/screens.component';
-
-@NgModule({
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+  @NgModule({
   declarations: [
     HomeComponent,
     AppComponent,
@@ -22,6 +22,7 @@ import { ScreensComponent } from './screens/screens.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],

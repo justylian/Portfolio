@@ -33,8 +33,10 @@ body {
     margin: 0px;
     overflow-x: hidden;
     position: absolute;
+    //background-color: white;
     padding: 0;
     top: 0%;
+    transition: 0.5s;
     --main-color-1: #2C3F40;
     --main-color-2: #D2BF03;
 }
