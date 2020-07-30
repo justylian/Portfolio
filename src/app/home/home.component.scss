@@ -51,7 +51,7 @@
         .arrow-text {
             font-size: 1vw;
             margin-left: 0.7vw;
-            margin-top: -1.5vw;
+            margin-top: -1.8vw;
             text-align: center;
             opacity: 0;
             position: absolute;
@@ -97,6 +97,13 @@
         #arrow-up {
             font-size: 19vw;
             //bottom: 0%;
+        }
+        #colour {
+            height: 2vw;
+            width: 10vw;
+        }
+        #colour #colour-text {
+            font-size: 3vw;
         }
         #arrow-down .arrow-text {
             font-size: 3vw;

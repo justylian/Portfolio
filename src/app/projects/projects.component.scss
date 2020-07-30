@@ -52,6 +52,7 @@
         display: none;
         width: 100%;
         position: relative;
+        margin-top: 2%;
         // margin-top: -220px;
         z-index: 4;
         img,
@@ -126,5 +127,14 @@
 @media screen and (max-width:481px) {
     #projects #projects-inner li {
         width: 90%;
+    }
+    #projects #projects-inner-text h1 {
+        font-size: 4vw;
+    }
+    #projects #projects-inner-text h2 {
+        font-size: 2.5vw;
+    }
+    #projects #projects-inner-text h3 {
+        font-size: 2.5vw;
     }
 }

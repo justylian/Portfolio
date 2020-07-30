@@ -8,7 +8,9 @@
         margin: auto;
         margin-top: 5%;
         table-layout: fixed;
-        tr {}
+        tr {
+            background: black;
+        }
         td {
             .screens-text {
                 padding-top: 11%;
@@ -28,6 +30,7 @@
             }
             //filter: grayscale(80%);
             margin: 0;
+            overflow: hidden;
             padding: 0;
             cursor: pointer;
             img {
@@ -41,7 +44,8 @@
                 z-index: 5;
             }
             img:hover {
-                filter: brightness(60%);
+                //filter: brightness(60%);
+                transform: scale(1.02);
             }
         }
     }
