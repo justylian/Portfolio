@@ -58,6 +58,7 @@ export class HomeComponent implements OnInit {
       //console.log("home")
       let element = document.getElementById("home");
       element.scrollIntoView({behavior:"smooth"});
+      $('#arrow-up').hide();
     }
 
 
@@ -95,7 +96,7 @@ export class HomeComponent implements OnInit {
         $("body").css("background-color","black");
         $("#colour").css("background-color","var(--main-color-2)");
         $("body").css("--main-color-1","#7e9090");
-        $("#colour-text").text("Light Mode") ;
+        $("#colour-text").text("Bright Mode") ;
         $("#colour-text").css("color","var(--main-color-2)");
 
         this.currentMode="black";

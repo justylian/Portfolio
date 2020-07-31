@@ -44,7 +44,7 @@
         /* text-align: right; */
         float: right;
         margin-right: 2%;
-        margin-top: 25vh;
+        margin-top: 19vh;
         transition: 1s;
         cursor: pointer;
         //filter: drop-shadow(0px 0px 13px #fff);
@@ -92,15 +92,19 @@
 @media screen and (max-width:481px) {
     #home {
         #home-about {
-            font-size: 6vw;
+            font-size: 13vw;
+            margin-left: 10%;
         }
         #arrow-up {
             font-size: 19vw;
+            margin-right: 5%;
             //bottom: 0%;
         }
         #colour {
             height: 2vw;
             width: 10vw;
+            margin-top: 10%;
+            margin-right: 5%;
         }
         #colour #colour-text {
             font-size: 3vw;
@@ -113,6 +117,7 @@
         }
         #arrow-down {
             font-size: 19vw;
+            margin-right: 5%;
         }
     }
 }
