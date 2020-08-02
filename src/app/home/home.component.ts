@@ -1,27 +1,13 @@
 import { Component, OnInit ,Input} from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { WHITE_ON_BLACK_CSS_CLASS } from '@angular/cdk/a11y/high-contrast-mode/high-contrast-mode-detector';
 declare var require: any;
 declare var $: any;
 declare var jQuery: any;
 @Component({
+
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  animations: [
-    trigger('changeState', [
-      state('state1', style({
-        backgroundColor: 'green',
-        transform: 'scale(1)'
-      })),
-      state('state2', style({
-        backgroundColor: 'red',
-        transform: 'scale(1.5)'
-      })),
-      transition('*=>state1', animate('300ms')),
-      transition('*=>state2', animate('2000ms'))
-    ])
-  ]
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   @Input() currentState;
@@ -29,11 +15,15 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(' .animate__animated ').each(function() {
+      $(this).addClass('animate__slideInLeft ');
+  });
     $(window).scroll(function() {
       if($(window).scrollTop() > 800) {
         console.log("el")
         $('#arrow-up').show();
         $('#arrow-down').hide();
+
 
       }
       else if($(window).scrollTop() === 0) {
@@ -44,7 +34,20 @@ export class HomeComponent implements OnInit {
         $('#arrow-up').hide();
 
       }
+
+      if($(window).scrollTop() > 600) {
+        $('.animate__animated ').each(function() {
+
+          $(this).addClass('animate__slideInLeft');
+
+      });
+
+      }
   });
+
+
+
+
   }
 
   public scrollDown(el) {
@@ -125,3 +128,4 @@ export class HomeComponent implements OnInit {
     }
 
 }
+
