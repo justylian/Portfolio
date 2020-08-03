@@ -1,10 +1,13 @@
 <div id="home">
-    <div id="colour" (click)="colourMode()">
-        <div (mouseenter)="hoverColourMode()" (mouseleave)="unhoverColourMode()" id="colour-text">Dark Mode</div>
+    <div id="colour" (click)="colourMode()" (mouseenter)="hoverColourMode()" (mouseleave)="unhoverColourMode()">
+        <div id="colour-text">Dark Mode</div>
+
+        <!-- <img id="colour-img" src="../../assets/img/moon.png" loading="lazy">-->
+
     </div>
     <div id="home-about" class=" animate__animated ">
         <a id="home-name" (click)="scrollDown('about')">Stelios Xenakis </a>
-        <div id="home-desc">is a Product Designer.</div>
+        <div id="home-desc">is a UX/UI Designer.</div>
     </div>
     <a id="arrow-down" (click)="scrollDown('projects')" (mouseenter)="hoverScrollDown()" (mouseleave)="unhoverScrollDown()">	&darr;
     <div class="arrow-text">Work</div>

@@ -95,20 +95,22 @@ export class HomeComponent implements OnInit {
     colourMode(){
       //console.log("as");
       if(this.currentMode==="white"){
-        //console.log("as");
+        //$("#colour-img").attr("src","../../assets/img/sun.png");
         $("body").css("background-color","black");
         $("#colour").css("background-color","var(--main-color-2)");
         $("body").css("--main-color-1","#7e9090");
-        $("#colour-text").text("Bright Mode") ;
+        $("#colour-text").html("Bright Mode") ;
         $("#colour-text").css("color","var(--main-color-2)");
 
         this.currentMode="black";
       }
       else if(this.currentMode==="black"){
+        //$("#colour-img").attr("src","../../assets/img/moon.png");
+
         $("body").css("background-color","white");
         $("#colour").css("background-color","var(--main-color-1)");
         $("body").css("--main-color-1","#2C3F40");
-        $("#colour-text").text("Dark Mode") ;
+        $("#colour-text").html("Dark Mode") ;
         $("#colour-text").css("color","var(--main-color-1)");
         this.currentMode="white";
       }
