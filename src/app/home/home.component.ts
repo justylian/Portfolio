@@ -98,10 +98,10 @@ export class HomeComponent implements OnInit {
         //$("#colour-img").attr("src","../../assets/img/sun.png");
         $("body").css("background-color","black");
         $("#colour").css("background-color","var(--main-color-2)");
-        $("body").css("--main-color-1","#7e9090");
+        $("body").css("--main-color-1","#dcdcdc");
         $("#colour-text").html("Bright Mode") ;
         $("#colour-text").css("color","var(--main-color-2)");
-
+        $("#projects-inner-text h4").css("color","black");
         this.currentMode="black";
       }
       else if(this.currentMode==="black"){
@@ -111,7 +111,11 @@ export class HomeComponent implements OnInit {
         $("#colour").css("background-color","var(--main-color-1)");
         $("body").css("--main-color-1","#2C3F40");
         $("#colour-text").html("Dark Mode") ;
+
+
         $("#colour-text").css("color","var(--main-color-1)");
+        $("#projects-inner-text h4").css("color","white");
+
         this.currentMode="white";
       }
     }
@@ -130,4 +134,11 @@ export class HomeComponent implements OnInit {
     }
 
 }
+window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
