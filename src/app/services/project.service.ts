@@ -11,6 +11,7 @@ export class ProjectService {
   project3Is=false;
   project4Is=false;
   project5Is=false;
+  project6Is=false;
   constructor() { }
 
 
@@ -61,8 +62,11 @@ export class ProjectService {
     else if(x===4){
       this.project4Is=myVar;
     }
-    else{
+    else if(x===5){
       this.project5Is=myVar;
+    }
+    else{
+      this.project6Is=myVar;
 
     }
 

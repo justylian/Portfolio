@@ -60,6 +60,14 @@ export class ScreensComponent implements OnInit {
       this.projectService.showProject(1);
 
     }
+    else if(x===9){
+      this.projectService.showProject(6);
+
+    }
+    else if(x===10){
+      this.projectService.showProject(6);
+
+    }
     else{
       this.projectService.showProject(2);
 

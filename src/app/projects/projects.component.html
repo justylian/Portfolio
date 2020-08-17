@@ -4,11 +4,11 @@
     <ul id="projects-inner">
         <li id="project-li-1">
             <div id="projects-inner-text" (click)="showProject(1)">
-            <h4>Bachelor Thesis 
+                <h4>Bachelor Thesis
                 </h4>
                 <h1>Ambient Travel Experience
                 </h1>
-                 
+
                 <h2>Design and development of a multimodal system which creates an interactive experience for upcoming and past trips. Created for the needs of the Smart Home Bedroom of the Ambient Intelligence Programme (AmI) in the HCI Laboratory of ICS,
                     FORTH.
                 </h2>
@@ -34,12 +34,40 @@
             <video controls autoplay>
                   <source src="../../assets/img/thesis2.mp4" type="video/mp4"></video>
         </div>
-        <li id="project-li-2">
-            <div id="projects-inner-text" (click)="showProject(2)">
-             <h4>Product Design 
+        <li id="project-li-6">
+            <div id="projects-inner-text" (click)="showProject(6)">
+                <h4>Case Study
 
                 </h4>
-                <h1>BONSAI Flower Shop  
+                <h1> Melikris
+
+                </h1>
+                <h2> Ideating, creating and testing a small e-commerce website.
+                </h2>
+                <h3 id="h3-6" (click)="showProject(6)">See More</h3>
+            </div>
+            <a id="projects-inner-assets" (click)="showProject(6)">
+                <img src="../../assets/img/melikris.png" loading="lazy">
+            </a>
+        </li>
+        <div class="project" id="project6">
+            <div class="minimize" id="project6-min" (click)="showProject(6)" (mouseenter)="hoverExit(6)" (mouseleave)="unhoverExit(6)">&#10005;
+                <div class="minimize-text">Hide Project</div>
+            </div>
+
+            <img src="../../assets/img/melikris-presentation.png" loading="lazy">
+            <img id="gif" src="../../assets/img/melikris1.gif" loading="lazy">
+            <img id="gif" src="../../assets/img/melikris2.gif" loading="lazy">
+            <img id="gif" src="../../assets/img/melikris3.gif" loading="lazy">
+            <img id="gif" src="../../assets/img/melikrisold.gif" loading="lazy">
+
+        </div>
+        <li id="project-li-2">
+            <div id="projects-inner-text" (click)="showProject(2)">
+                <h4>Product Design
+
+                </h4>
+                <h1>BONSAI Flower Shop
 
                 </h1>
                 <h2> Creation of a new brand identity for a local business. Fresh website built from scratch accompanied by a redesigned logotype.
@@ -64,13 +92,14 @@
 
         <li id="project-li-3">
             <div id="projects-inner-text" (click)="showProject(3)">
-            <h4>Product Design
+                <h4>Product Design
 
                 </h4>
                 <h1> HCI International Conference 2019 Timeline Demonstration
 
                 </h1>
-                <h2>Work involved design and development of a HCI International Conferences reminiscence through a revolving timeline in a web-app form. The projection demonstrated memories from conferences since 2007, but also promoted the upcoming hosts. The creation was projected in the 2019 HCI International Conference in Orlando, Florida for the HCI Laboratory of the Institute of Computer Science in FORTH. </h2>
+                <h2>Work involved design and development of a HCI International Conferences reminiscence through a revolving timeline in a web-app form. The projection demonstrated memories from conferences since 2007, but also promoted the upcoming hosts.
+                    The creation was projected in the 2019 HCI International Conference in Orlando, Florida for the HCI Laboratory of the Institute of Computer Science in FORTH. </h2>
                 <h3 id="h3-3" (click)="showProject(3)">See More</h3>
             </div>
             <a id="projects-inner-assets" (click)="showProject(3)">
@@ -89,10 +118,10 @@
         </div>
         <li id="project-li-4">
             <div id="projects-inner-text" (click)="showProject(4)">
-            <h4>Internship
+                <h4>Internship
 
                 </h4>
-                <h1> Science & Technology Park of Crete (STEP-C) 
+                <h1> Science & Technology Park of Crete (STEP-C)
 
                 </h1>
                 <h2> Redesign of the Science & Technology Park of Crete official website and additional assistance for the park’s graphics and media aiming at the boost of social interaction and engagement. The work was accomplished for the needs of an internship
@@ -113,7 +142,7 @@
         </div>
         <li id="project-li-5">
             <div id="projects-inner-text" (click)="showProject(5)">
-              <h4>Product Design
+                <h4>Product Design
 
                 </h4>
                 <h1> Hyperbound Travel Blog
@@ -134,6 +163,7 @@
 
             <img src="../../assets/img/hyper-presentation.png" loading="lazy">
         </div>
+
 
     </ul>
 
