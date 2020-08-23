@@ -43,12 +43,12 @@ body {
 
 h1 {
     color: var(--main-color-2);
-    font-size: 3.5vw;
+    font-size: 3vw;
     margin-left: 5%;
 }
 
 @media screen and (max-width:481px) {
     h1 {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 }
