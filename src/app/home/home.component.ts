@@ -101,7 +101,7 @@ export class HomeComponent implements OnInit {
         $("body").css("--main-color-1","#dcdcdc");
         $("#colour-text").html("Bright Mode") ;
         $("#colour-text").css("color","var(--main-color-2)");
-        $("#projects-inner-text h4").css("color","black");
+       //$("#projects-inner-text h4").css("color","black");
         this.currentMode="black";
       }
       else if(this.currentMode==="black"){
@@ -114,7 +114,7 @@ export class HomeComponent implements OnInit {
 
 
         $("#colour-text").css("color","var(--main-color-1)");
-        $("#projects-inner-text h4").css("color","white");
+        //$("#projects-inner-text h4").css("color","white");
 
         this.currentMode="white";
       }

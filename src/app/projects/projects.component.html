@@ -3,19 +3,17 @@
 
     <ul id="projects-inner">
         <li id="project-li-1">
-            <div id="projects-inner-text" (click)="showProject(1)">
+            <div id="projects-inner-text">
                 <h4>Bachelor Thesis
                 </h4>
                 <h1>Ambient Travel Experience
                 </h1>
 
-                <h2>Design and development of a multimodal system which creates an interactive experience for upcoming and past trips. Created for the needs of the Smart Home Bedroom of the Ambient Intelligence Programme (AmI) in the HCI Laboratory of ICS,
-                    FORTH.
+                <h2>Product design and development of a multimodal system which creates an interactive experience for the upcoming and past trips of the user using ambient technologies. Created for the needs of the Smart Home of the Ambient Intelligence Programme
+                    (AmI) in the HCI Laboratory of ICS, FORTH.
                 </h2>
-                <h3 id="h3-1" (click)="showProject(1)">See More
-                    <!-- <div class="loader">
-                    </div>-->
-                </h3>
+                <h3 id="h3-1" (click)="showProject(1)">See More</h3>
+
 
             </div>
             <a id="projects-inner-assets" (click)="showProject(1)">
@@ -34,15 +32,64 @@
             <video controls autoplay>
                   <source src="../../assets/img/thesis2.mp4" type="video/mp4"></video>
         </div>
+        <li id="project-li-4">
+            <div id="projects-inner-text">
+                <h4>Internship
+
+                </h4>
+                <h1> Science & Technology Park of Crete (STEP-C)
+
+                </h1>
+                <h2>User experience design and development of the Science & Technology Park of Crete official website and the brand's regeneration. The work was accomplished for the needs of an internship programme for the University of Crete.
+                </h2>
+                <h3 id="h3-4" (click)="showProject(4)">See More</h3>
+            </div>
+            <a id="projects-inner-assets" (click)="showProject(4)">
+                <img src="../../assets/img/stepc.png" loading="lazy">
+            </a>
+        </li>
+        <div class="project" id="project4">
+            <div class="minimize" id="project4-min" (click)="showProject(4)" (mouseenter)="hoverExit(4)" (mouseleave)="unhoverExit(4)">&#10005;
+                <div class="minimize-text">Hide Project</div>
+            </div>
+
+            <img src="../../assets/img/stepc-presentation.png" loading="lazy">
+        </div>
+        <li id="project-li-3">
+            <div id="projects-inner-text">
+                <h4>HCI LABORATORY PROJECT
+
+                </h4>
+                <h1> HCI International Conference 2019 Timeline Demonstration
+
+                </h1>
+                <h2>Design and development of a HCI International Conferences reminiscence through a revolving timeline in a web-app form. The projection demonstrated memories from conferences since 2007, but also promoted the upcoming hosts. The creation
+                    was projected in the 2019 HCI International Conference in Orlando, Florida for the HCI Laboratory of the Institute of Computer Science in FORTH. </h2>
+                <h3 id="h3-3" (click)="showProject(3)">See More</h3>
+            </div>
+            <a id="projects-inner-assets" (click)="showProject(3)">
+                <img src="../../assets/img/conf.png" loading="lazy">
+            </a>
+        </li>
+        <div class="project" id="project3">
+            <div class="minimize" id="project3-min" (click)="showProject(3)" (mouseenter)="hoverExit(3)" (mouseleave)="unhoverExit(3)">&#10005;
+                <div class="minimize-text">Hide Project</div>
+            </div>
+
+            <video controls autoplay>
+          <source src="../../assets/img/conf-presentation.mp4" type="video/mp4"></video>
+            <!--   <img src="../../assets/img/conf-presentation.png" loading="lazy">-->
+
+        </div>
         <li id="project-li-6">
-            <div id="projects-inner-text" (click)="showProject(6)">
-                <h4>Case Study
+            <div id="projects-inner-text">
+                <h4>Product Design
 
                 </h4>
                 <h1> Melikris
 
                 </h1>
-                <h2> Ideating, creating and testing a small e-commerce website.
+                <h2> Ideating, creating and testing a small e-commerce website for honey products.
                 </h2>
                 <h3 id="h3-6" (click)="showProject(6)">See More</h3>
             </div>
@@ -63,8 +110,8 @@
 
         </div>
         <li id="project-li-2">
-            <div id="projects-inner-text" (click)="showProject(2)">
-                <h4>Product Design
+            <div id="projects-inner-text">
+                <h4>Web & Graphic Design
 
                 </h4>
                 <h1>BONSAI Flower Shop
@@ -90,59 +137,11 @@
             <img src="../../assets/img/bonsai-presentation.png" loading="lazy">
         </div>
 
-        <li id="project-li-3">
-            <div id="projects-inner-text" (click)="showProject(3)">
-                <h4>Product Design
 
-                </h4>
-                <h1> HCI International Conference 2019 Timeline Demonstration
 
-                </h1>
-                <h2>Work involved design and development of a HCI International Conferences reminiscence through a revolving timeline in a web-app form. The projection demonstrated memories from conferences since 2007, but also promoted the upcoming hosts.
-                    The creation was projected in the 2019 HCI International Conference in Orlando, Florida for the HCI Laboratory of the Institute of Computer Science in FORTH. </h2>
-                <h3 id="h3-3" (click)="showProject(3)">See More</h3>
-            </div>
-            <a id="projects-inner-assets" (click)="showProject(3)">
-                <img src="../../assets/img/conf.png" loading="lazy">
-            </a>
-        </li>
-        <div class="project" id="project3">
-            <div class="minimize" id="project3-min" (click)="showProject(3)" (mouseenter)="hoverExit(3)" (mouseleave)="unhoverExit(3)">&#10005;
-                <div class="minimize-text">Hide Project</div>
-            </div>
-
-            <video controls autoplay>
-            <source src="../../assets/img/conf-presentation.mp4" type="video/mp4"></video>
-            <!--   <img src="../../assets/img/conf-presentation.png" loading="lazy">-->
-
-        </div>
-        <li id="project-li-4">
-            <div id="projects-inner-text" (click)="showProject(4)">
-                <h4>Internship
-
-                </h4>
-                <h1> Science & Technology Park of Crete (STEP-C)
-
-                </h1>
-                <h2> Redesign of the Science & Technology Park of Crete official website and additional assistance for the park’s graphics and media aiming at the boost of social interaction and engagement. The work was accomplished for the needs of an internship
-                    programme from the University of Crete.
-                </h2>
-                <h3 id="h3-4" (click)="showProject(4)">See More</h3>
-            </div>
-            <a id="projects-inner-assets" (click)="showProject(4)">
-                <img src="../../assets/img/stepc.png" loading="lazy">
-            </a>
-        </li>
-        <div class="project" id="project4">
-            <div class="minimize" id="project4-min" (click)="showProject(4)" (mouseenter)="hoverExit(4)" (mouseleave)="unhoverExit(4)">&#10005;
-                <div class="minimize-text">Hide Project</div>
-            </div>
-
-            <img src="../../assets/img/stepc-presentation.png" loading="lazy">
-        </div>
         <li id="project-li-5">
-            <div id="projects-inner-text" (click)="showProject(5)">
-                <h4>Product Design
+            <div id="projects-inner-text">
+                <h4>Web Design
 
                 </h4>
                 <h1> Hyperbound Travel Blog

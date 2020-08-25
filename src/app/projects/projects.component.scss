@@ -94,6 +94,7 @@
         width: 50%;
         display: inline-block;
         vertical-align: top;
+        //cursor: pointer;
         h1 {
             font-size: 2.5vw;
             margin: 0;
@@ -101,20 +102,18 @@
             color: var(--main-color-1);
             padding-bottom: 2%;
             line-height: 110%;
-            padding-top: 2%;
+            padding-top: 1%;
         }
         h4 {
             font-size: 1.2vw;
-            margin: 0;
-            color: #fff;
-            margin: 0;
-            padding: 0.5% 1%;
-            box-decoration-break: clone;
+            color: #a6a6a6;
+            /* margin: 0; */
+            /* padding: .5% 1%; */
             display: inline;
-            background: var(--main-color-2);
-            //line-height: 69px;
-            box-decoration-break: clone;
-            -webkit-box-decoration-break: clone;
+            text-transform: uppercase;
+            // background: #ffffff;
+            //@at-root: clone;
+            //-webkit-box-decoration-break: clone;
         }
         h2 {
             display: block;
@@ -129,7 +128,7 @@
             font-size: 1.2vw;
             cursor: pointer;
             transition: 1s;
-            padding-top: 4%;
+            padding-top: 3%;
         }
         h3:hover {
             color: var(--main-color-1);
