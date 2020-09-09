@@ -10,10 +10,17 @@
         <!-- <img id="colour-img" src="../../assets/img/moon.png" loading="lazy">-->
 
     </div>
+
     <div id="home-about" class=" animate__animated ">
-        <a id="home-name" (click)="scrollDown('about')">Stelios Xenakis </a>
-        <div id="home-desc">is a Product & User Experience Designer.</div>
+        <!-- <a id="arrow-right">	&rarr;
+
+      </a>-->
+        <a id="home-name" class="nojQuery" (click)="zoomFace()" (mouseenter)="zoomFaceHover()">Stelios Xenakis </a>
+        <div id="home-desc"><br>is a <br>
+            <div id="home-desc-inner">User Experience Designer.</div>
+        </div>
     </div>
+
     <a id="arrow-down" (click)="scrollDown('projects')" (mouseenter)="hoverScrollDown()" (mouseleave)="unhoverScrollDown()">	&darr;
     <div class="arrow-text">Work</div>
 

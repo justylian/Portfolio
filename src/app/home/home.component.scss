@@ -1,31 +1,25 @@
 #home {
     height: 100vh;
     .header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-    background-color: #f4f4f400;
-
-
-}
-
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 5px;
-    
-    background-color: #f4f4f400;
-
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 5px;
-  //transition:0.5s;
-    background: var(--main-color-2);
-  width: 0%;
-}
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: #f4f4f400;
+    }
+    /* The progress container (grey background) */
+    .progress-container {
+        width: 100%;
+        height: 5px;
+        background-color: #f4f4f400;
+    }
+    /* The progress bar (scroll indicator) */
+    .progress-bar {
+        height: 5px;
+        //transition:0.5s;
+        background: var(--main-color-2);
+        width: 0%;
+    }
     #colour {
         position: relative;
         margin-right: 2%;
@@ -47,21 +41,27 @@
         padding-top: 20%;
         width: 60%;
         margin-left: 20%;
-        font-size: 4vw;
+        font-size: 3vw;
         font-family: "Roboto";
         line-height: 120%;
         #home-name {
             display: inline;
             color: var(--main-color-2);
-            transition: 1s;
+            transition: 0.2s;
             cursor: pointer;
-        }
-        #home-name:hover {
-            color: var(--main-color-1);
+            background: url("/assets/img/me.jpg");
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 0vw;
+            background-size: cover;
+            //font-weight: bold;
         }
         #home-desc {
             display: inline;
             color: var(--main-color-1);
+        }
+        #home-desc-inner {
+            // font-weight: bold;
         }
     }
     #arrow-down {

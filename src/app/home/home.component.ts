@@ -12,12 +12,19 @@ declare var jQuery: any;
 export class HomeComponent implements OnInit {
   @Input() currentState;
   currentMode="white";
+  currentZoom=true;
   constructor() { }
 
   ngOnInit(): void {
+    /*const that=this;
+    setTimeout(function(){
+      that.zoomFaceHover();
+    }, 1000);*/
     $(' .animate__animated ').each(function() {
       $(this).addClass('animate__slideInLeft ');
+
   });
+
     $(window).scroll(function() {
       if($(window).scrollTop() > 800) {
         console.log("el")
@@ -46,9 +53,65 @@ export class HomeComponent implements OnInit {
   });
 
 
-
-
   }
+
+  public zoomFace() {
+
+  if(this.currentZoom===true){
+
+    if(window.innerWidth<=481){
+      $("#home-name").animate({
+        letterSpacing: "-12.1vw",
+        fontSize: "23vw",
+        fontWeight:"900",
+            }, 200, function() {
+              // Animation complete.
+              $('#home-name').removeClass('nojQuery');
+         });
+    }
+    else{
+    $("#home-name").animate({
+      letterSpacing: "-8.1vw",
+      fontSize: "15vw",
+      fontWeight:"900",
+          }, 200, function() {
+            // Animation complete.
+            $('#home-name').removeClass('nojQuery');
+       });
+      }
+    this.currentZoom=false;
+  }
+  else{
+    if(window.innerWidth<=481){
+      $("#home-name").animate({
+        fontSize: "13vw",
+        letterSpacing: "0vw",
+        fontWeight:"300",
+            }, 200);
+
+    }
+    else{
+    $("#home-name").animate({
+      fontSize: "3vw",
+      letterSpacing: "0vw",
+      fontWeight:"300",
+          }, 200);
+      }
+    this.currentZoom=true;
+  }
+  }
+
+  public zoomFaceHover() {
+if(this.currentZoom===true){
+      $("#home-name").animate({
+        letterSpacing: "0px"
+            }, 50, function() {
+              // Animation complete.
+         });
+        }
+  }
+
+
 
   public scrollDown(el) {
     let element = document.getElementById(el);

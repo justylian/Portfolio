@@ -39,12 +39,14 @@ body {
     transition: 0.5s;
     --main-color-1: #2C3F40;
     --main-color-2: #D2BF03;
+    --main-color-2: #197874;
 }
 
 h1 {
     color: var(--main-color-2);
     font-size: 3vw;
     margin-left: 5%;
+    font-weight: bold;
 }
 
 @media screen and (max-width:481px) {
